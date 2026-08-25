@@ -1,0 +1,15 @@
+name: API Spec Consistency Check
+on:
+  push:
+    paths:
+      - "src/routes/**"   # 실제 라우트 정의 경로로 수정
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/check_api_spec.py
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_APISPEC_DB_ID: ${{ secrets.NOTION_APISPEC_DB_ID }}
