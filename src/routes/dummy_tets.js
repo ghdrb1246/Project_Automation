@@ -1,1 +1,1 @@
-router.get("/dummy-test2-endpoint", handler);
+router.get("/dummy-test-endpoint", handler);
