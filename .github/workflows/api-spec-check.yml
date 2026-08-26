@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - "src/routes/**"   # 실제 라우트 정의 경로로 수정
+  workflow_dispatch: {}    # 경로 변경 없이도 수동으로 테스트 실행 가능
 
 jobs:
   check:
