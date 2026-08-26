@@ -1,0 +1,15 @@
+name: Daily Discord Report
+on:
+  schedule:
+    - cron: "0 0 * * 1-5"  # 매일 오전 9시(KST), 평일만
+  workflow_dispatch: {}
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - run: python3 scripts/discord_report.py
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_DS_ID: ${{ secrets.NOTION_WBS_DS_ID }}
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_URL }}
