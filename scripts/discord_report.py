@@ -41,7 +41,8 @@ for page in results:
     people = props.get("담당자", {}).get("people", [])
     assignee = people[0]["name"] if people else "미배정"
 
-    area_prop = props.get("업무 영역", {}).get("select")
+    # 실제 Notion 속성명에 숨은 제어 문자(\x08)가 포함되어 있음 (원본 템플릿에서 그렇게 만들어짐, 눈으로는 안 보임)
+    area_prop = props.get("\x08업무 영역", {}).get("select")
     area = area_prop["name"] if area_prop else "-"
     lines.append(f"- [{flag}][{area}] **{name}** (담당: {assignee}, 상태: {status}, 마감: {end})")
 

@@ -14,6 +14,12 @@ def query_flagged(ds_id, formula_property, title_property):
     if not results.ok:
         # 400/404 등 에러일 때 Notion이 보내는 실제 사유(예: 존재하지 않는 속성명)를 로그에 남김
         print(f"[{formula_property}] Notion API 에러 응답:", results.text)
+        # 필터에 쓴 속성명이 실제와 다를 때를 대비해, 필터 없이 1건만 조회해서 진짜 속성명 목록을 같이 출력
+        debug = requests.post(f"https://api.notion.com/v1/data_sources/{ds_id}/query", headers=HEADERS, json={"page_size": 1})
+        if debug.ok:
+            debug_results = debug.json().get("results", [])
+            if debug_results:
+                print(f"[{ds_id}] 실제 속성명 목록:", list(debug_results[0]["properties"].keys()))
     results.raise_for_status()
     results = results.json().get("results", [])
 
