@@ -35,11 +35,11 @@ def query_flagged(ds_id, formula_property, title_property):
 
 lines = []
 
-wbs_flagged = query_flagged(os.environ["NOTION_WBS_DS_ID"], "동기화 필요", "업무 항목")
+wbs_flagged = query_flagged(os.environ["NOTION_WBS_DS_ID"], "동기화 여부", "업무 항목")
 for page_id, name, assignee in wbs_flagged:
     lines.append(f"- [WBS] **{name}** (담당: {assignee}) — 관련 문서가 더 최근에 수정됨")
 
-func_flagged_sync = query_flagged(os.environ["NOTION_FUNCSPEC_DS_ID"], "동기화 여부", "기능")  # 기능 명세서 DB의 실제 속성명은 "동기화 필요"가 아니라 "동기화 여부"
+func_flagged_sync = query_flagged(os.environ["NOTION_FUNCSPEC_DS_ID"], "동기화 여부", "기능")
 for page_id, name, _ in func_flagged_sync:
     lines.append(f"- [기능 명세서] **{name}** — API 명세서가 더 최근에 수정됨")
 
