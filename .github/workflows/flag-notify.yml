@@ -1,0 +1,18 @@
+name: Notify Inconsistency Flags
+on:
+  schedule:
+    - cron: "30 0 * * 1-5"  # 매일 오전 9시 30분(KST), 평일만
+  workflow_dispatch: {}
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/notify_flags.py
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_WBS_DS_ID: ${{ secrets.NOTION_WBS_DS_ID }}
+          NOTION_APISPEC_DS_ID: ${{ secrets.NOTION_APISPEC_DS_ID }}
+          NOTION_FUNCSPEC_DS_ID: ${{ secrets.NOTION_FUNCSPEC_DS_ID }}
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_URL }}
