@@ -71,8 +71,8 @@
 
 ## 4. PlantUML 자동 렌더링 — **커밋 필요**
 - [*] `docs/diagrams/` 아래 테스트용 `.puml` 파일 하나 추가(또는 기존 파일 수정) 후 커밋 → push
-- [] Actions 탭에서 `Render PlantUML` 워크플로우가 트리거되는지 확인
-- [] 같은 브랜치에 `.svg` 파일이 자동으로 커밋되는지 확인
+- [*] Actions 탭에서 `Render PlantUML` 워크플로우가 트리거되는지 확인
+- [*] 같은 브랜치에 `.svg` 파일이 자동으로 커밋되는지 확인
 - [] Notion에 해당 SVG의 Raw URL을 `/embed`로 넣어둔 페이지가 있다면, 최신 이미지로 갱신되어 보이는지 확인
 
 ---
