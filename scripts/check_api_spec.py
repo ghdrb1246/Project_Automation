@@ -22,7 +22,7 @@ notion_resp.raise_for_status()  # 조회 자체가 실패하면 여기서 바로
 notion_routes = set()
 for page in notion_resp.json().get("results", []):
     props = page["properties"]
-    uri = props["URI"]["rich_text"][0]["plain_text"] if props["URI"]["rich_text"] else None
+    uri = props["URI"]["title"][0]["plain_text"] if props["URI"]["title"] else None
     method = props["메서드"]["select"]["name"] if props["메서드"]["select"] else None
     if uri and method:
         notion_routes.add((method, uri))
