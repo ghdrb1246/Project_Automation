@@ -13,9 +13,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Render diagrams to SVG
-        uses: holowinski/plantuml-github-action@main
-        with:
-          args: -v -tsvg docs/diagrams/*.puml
+        run: |
+          docker run --rm -v "$PWD":/data -w /data plantuml/plantuml -tsvg "docs/diagrams/*.puml"
       - name: Commit rendered diagrams
         run: |
           git config user.name "github-actions"
