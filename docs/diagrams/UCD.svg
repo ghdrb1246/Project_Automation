@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="310px" preserveAspectRatio="none" style="width:202px;height:310px;" version="1.1" viewBox="0 0 202 310" width="202px" zoomAndPan="magnify"><defs><filter height="300%" id="f1vog04wq42hun" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[25e7017f0662b2423753ce53d4d1f256]
+cluster 프로젝트 관리 시스템--><rect fill="#FFFFFF" filter="url(#f1vog04wq42hun)" height="273" style="stroke: #000000; stroke-width: 1.5;" width="112" x="79" y="24"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="82" x="94" y="38.9951">프로젝트 관리 시스템</text><ellipse cx="135.1274" cy="74.0236" fill="#FEFECE" filter="url(#f1vog04wq42hun)" rx="25.6274" ry="14.5236" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="32" x="119.1274" y="78.6721">회원가입</text><ellipse cx="134.9706" cy="202.0236" fill="#FEFECE" filter="url(#f1vog04wq42hun)" rx="19.9706" ry="14.5236" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="24" x="122.9706" y="206.6721">로그인</text><ellipse cx="134.7696" cy="138.0236" fill="#FEFECE" filter="url(#f1vog04wq42hun)" rx="39.7696" ry="14.5236" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="52" x="108.7696" y="142.6721">WBS 조회</text><ellipse cx="134.9558" cy="266.0236" fill="#FEFECE" filter="url(#f1vog04wq42hun)" rx="28.4558" ry="14.5236" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="36" x="116.9558" y="270.6721">일정 관리</text><!--MD5=[fee662a292a0353a69bd162820bae93b]
+entity User--><ellipse cx="20.5" cy="107" fill="#FEFECE" filter="url(#f1vog04wq42hun)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 1.5;"/><path d="M20.5,115 L20.5,142 M7.5,123 L33.5,123 M20.5,142 L7.5,157 M20.5,142 L33.5,157 " fill="none" filter="url(#f1vog04wq42hun)" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="24" x="8.5" y="175.4951">사용자</text><!--MD5=[97ab183161fd5d1db7fba7485cf76add]
+entity Admin--><ellipse cx="20.5" cy="229" fill="#FEFECE" filter="url(#f1vog04wq42hun)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 1.5;"/><path d="M20.5,237 L20.5,264 M7.5,245 L33.5,245 M20.5,264 L7.5,279 M20.5,264 L33.5,279 " fill="none" filter="url(#f1vog04wq42hun)" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="24" x="8.5" y="297.4951">관리자</text><!--MD5=[57bf3159251ba6d788e56222dd11fdd6]
+link User to UC1--><path d="M35.13,128.64 C44.94,122.04 58.58,113.14 71,106 C83.77,98.66 98.42,91.16 110.37,85.27 " fill="none" id="User-&gt;UC1" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="114.98,83.02,105.1382,83.3917,110.4908,85.2217,108.6609,90.5744,114.98,83.02" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[06ebee4cbbe132cc9038a23578b440b9]
+link User to UC2--><path d="M35.13,147.36 C44.94,153.96 58.58,162.86 71,170 C84.71,177.88 100.58,185.94 112.97,192 " fill="none" id="User-&gt;UC2" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="117.7,194.3,111.352,186.7698,113.2025,192.1155,107.8568,193.9659,117.7,194.3" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[7128cd1693f5ac5e48a097ae8b02564a]
+link User to UC3--><path d="M35.29,138 C48.81,138 70.14,138 89.52,138 " fill="none" id="User-&gt;UC3" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="94.93,138,85.93,134,89.93,138,85.93,142,94.93,138" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[de97aa311480b161bc35f3609e8d693b]
+link Admin to UC2--><path d="M35.34,252.66 C45.25,247.43 58.93,240.24 71,234 C85.14,226.69 101.14,218.57 113.47,212.34 " fill="none" id="Admin-&gt;UC2" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="118.18,209.96,108.3431,210.4449,113.7165,212.2132,111.9481,217.5865,118.18,209.96" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[9c5d918ecfd1c00c01cdb5a4c09a381c]
+link Admin to UC4--><path d="M35.29,260.74 C51.59,261.6 79.25,263.08 101.15,264.25 " fill="none" id="Admin-&gt;UC4" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="106.3,264.52,97.5308,260.0367,101.3074,264.2482,97.0959,268.0248,106.3,264.52" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[7e68562760c97c41e25dfbfe5bca9472]
+@startuml
+left to right direction
+actor 사용자 as User
+actor "관리자" as Admin
+
+rectangle "프로젝트 관리 시스템" {
+  usecase "회원가입" as UC1
+  usecase "로그인" as UC2
+  usecase "WBS 조회" as UC3
+  usecase "일정 관리" as UC4
+}
+
+User - -> UC1
+User - -> UC2
+User - -> UC3
+Admin - -> UC2
+Admin - -> UC4
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 10:22:07 UTC 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 17.0.20+8
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>
