@@ -1,0 +1,18 @@
+@startuml
+left to right direction
+actor 사용자 as User
+actor "관리자" as Admin
+
+rectangle "프로젝트 관리 시스템" {
+  usecase "회원가입" as UC1
+  usecase "로그인" as UC2
+  usecase "WBS 조회" as UC3
+  usecase "일정 관리" as UC4
+}
+
+User --> UC1
+User --> UC2
+User --> UC3
+Admin --> UC2
+Admin --> UC4
+@enduml
