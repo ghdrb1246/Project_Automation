@@ -8,6 +8,7 @@ jobs:
   report:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - run: python3 scripts/discord_report.py
         env:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
