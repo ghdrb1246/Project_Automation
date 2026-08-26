@@ -13,3 +13,4 @@ jobs:
         env:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
           NOTION_APISPEC_DB_ID: ${{ secrets.NOTION_APISPEC_DB_ID }}
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_URL }}
