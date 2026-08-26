@@ -11,6 +11,9 @@ def query_flagged(ds_id, formula_property, title_property):
         headers=HEADERS,
         json={"filter": {"property": formula_property, "formula": {"string": {"contains": "⚠️"}}}},
     )
+    if not results.ok:
+        # 400/404 등 에러일 때 Notion이 보내는 실제 사유(예: 존재하지 않는 속성명)를 로그에 남김
+        print(f"[{formula_property}] Notion API 에러 응답:", results.text)
     results.raise_for_status()
     results = results.json().get("results", [])
 
