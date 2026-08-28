@@ -65,3 +65,22 @@ test-scenario-guide.md ──── qa-guide.md   (테스트 케이스 작성 �
 1. `automation-plan.md`를 읽고 전체 그림을 파악하세요
 2. `implementation-guide.md`의 "0. 사전 준비 체크리스트"를 따라 Notion Integration·GitHub Secrets를 세팅하세요
 3. 문서 작성이 필요할 때마다 해당 `*-guide.md`를 참고하세요
+
+운영 — 스케줄 자동화 켜고 끄기
+
+daily-discord-report.yml, flag-notify.yml은 평일마다 자동으로 도는데, 방학이나 프로젝트 소강기간처럼 잠시 멈추고 싶을 때는 파일을 지우거나 코드를 건드릴 필요 없이 GitHub CLI로 껐다 켤 수 있습니다.
+
+bash
+# 끄기
+gh workflow disable "Daily Discord Report"
+gh workflow disable "Notify Inconsistency Flags"
+
+# 다시 켜기
+gh workflow enable "Daily Discord Report"
+gh workflow enable "Notify Inconsistency Flags"
+
+# 현재 활성/비활성 상태 확인
+gh workflow list
+저장소 관리자/쓰기 권한이 있어야 실행할 수 있습니다.
+disable 상태에서는 스케줄뿐 아니라 수동 실행(workflow_dispatch)도 함께 막힙니다.
+참고로 90일 넘게 저장소에 커밋이 없으면 GitHub가 스케줄 워크플로우를 자동으로 비활성화하기도 하니, 방학이 길어지면 이것도 염두에 두세요.
