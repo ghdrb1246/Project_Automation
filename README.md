@@ -34,14 +34,14 @@
 
 | 파일명 | 설명 |
 |---|---|
-| [`automation-plan.md`](./automation-plan.md) | **자동화 기획서.** 왜 이렇게 설계했는지 — 문제 정의, 설계 원칙, 문제→해결책 매핑, 전체 아키텍처 개요, 리스크 |
-| [`implementation-guide.md`](./implementation-guide.md) | **자동화 구현 가이드.** 실제 설정 방법 — Notion Formula/Rollup 수식, GitHub Actions 워크플로우, Python 스크립트, Secrets 목록, 디렉토리 구조, 브랜치 전략 |
-| [`test-checklist.md`](./test-checklist.md) | **자동화 테스트 체크리스트.** 구현이 실제로 동작하는지 검증하는 순서 — Tier별 개별 테스트 + End-to-End 시나리오 |
-| [`wbs-guide.md`](./wbs-guide.md) | **WBS 사용 가이드.** 업무 항목을 어떻게 작성하는지, 업무 영역·상태값의 의미, 자주 헷갈리는 부분 |
-| [`qa-guide.md`](./qa-guide.md) | **QA 사용 가이드.** 테스트 실패 시 버그 티켓을 어떻게 작성하는지, 진행 상태 관리 |
-| [`test-scenario-guide.md`](./test-scenario-guide.md) | **테스트 시나리오 사용 가이드.** 테스트 케이스를 어떻게 작성하고 빠짐없이 커버하는지 |
-| [`service-planning-guide.md`](./service-planning-guide.md) | **서비스 기획 사용 가이드.** 핵심 기능·타겟층·문제 정의·경쟁 분석을 어떻게 작성하는지 |
-| [`requirements-guide.md`](./requirements-guide.md) | **요구사항 명세서 사용 가이드.** 도메인·유스케이스 단위로 시스템 요구사항을 정리하는 방법 |
+| [`automation-plan.md`](./docs/automation-plan.md) | **자동화 기획서.** 왜 이렇게 설계했는지 — 문제 정의, 설계 원칙, 문제→해결책 매핑, 전체 아키텍처 개요, 리스크 |
+| [`implementation-guide.md`](./docs/implementation-guide.md) | **자동화 구현 가이드.** 실제 설정 방법 — Notion Formula/Rollup 수식, GitHub Actions 워크플로우, Python 스크립트, Secrets 목록, 디렉토리 구조, 브랜치 전략 |
+| [`test-checklist.md`](./docs/test-checklist.md) | **자동화 테스트 체크리스트.** 구현이 실제로 동작하는지 검증하는 순서 — Tier별 개별 테스트 + End-to-End 시나리오 |
+| [`wbs-guide.md`](./docs/wbs-guide.md) | **WBS 사용 가이드.** 업무 항목을 어떻게 작성하는지, 업무 영역·상태값의 의미, 자주 헷갈리는 부분 |
+| [`qa-guide.md`](./docs/qa-guide.md) | **QA 사용 가이드.** 테스트 실패 시 버그 티켓을 어떻게 작성하는지, 진행 상태 관리 |
+| [`test-scenario-guide.md`](./docs/test-scenario-guide.md) | **테스트 시나리오 사용 가이드.** 테스트 케이스를 어떻게 작성하고 빠짐없이 커버하는지 |
+| [`service-planning-guide.md`](./docs/service-planning-guide.md) | **서비스 기획 사용 가이드.** 핵심 기능·타겟층·문제 정의·경쟁 분석을 어떻게 작성하는지 |
+| [`requirements-guide.md`](./docs/requirements-guide.md) | **요구사항 명세서 사용 가이드.** 도메인·유스케이스 단위로 시스템 요구사항을 정리하는 방법 |
 
 ## 문서 간 흐름
 
